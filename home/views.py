@@ -306,7 +306,7 @@ def checkout(request):
 @login_required(login_url='signin')
 def pay(request):
     if request.method == 'POST':
-        api_key = 'sk_test_ad502719e58fd78a40fd31ab9415532181331240' #secret key from paystack
+        api_key = 'sk_test_37f8852cdcebc8a65631bf6ae87ec2aeaaaf3dba' #secret key from paystack
         curl = 'https://api.paystack.co/transaction/initialize' #paystack call url 
         cburl = 'http:// 35.177.109.79/callback' #payment thank you page 
         ref = str(uuid.uuid4()) #reference number required by paystack as additional order number 
